@@ -46,6 +46,9 @@ get_filename_component(GPIO_COMPONENT "components/am_gpio" ABSOLUTE)
 
 get_filename_component(RTC_COMPONENT "components/am_rtc" ABSOLUTE)
 
+get_filename_component(ULTRASONIC_COMPONENT "components/am_ultrasonic" ABSOLUTE)
+
+
 
 
 
@@ -65,6 +68,7 @@ set(IDF_EXTRA_COMPONENT_DIRS
     ${WIFI_COMPONENT}
     ${GPIO_COMPONENT}
     ${RTC_COMPONENT}
+    ${ULTRASONIC_COMPONENT}
 )
 
 # Override the configurations for Amazon FreeRTOS.

@@ -61,7 +61,7 @@ int am_gpio_read(uint32_t gpio){
     return gpio_get_level(gpio);
 }
 
-void am_gpio_write(uint32_t gpio, uint32_t level){
+int am_gpio_write(uint32_t gpio, uint32_t level){
     switch(gpio){
         case 1: gpio = GPIO_DO01;
                 break;
@@ -74,7 +74,7 @@ void am_gpio_write(uint32_t gpio, uint32_t level){
     }
     //printf("write gpio-> %d:", gpio);    
     //printf("%d\n", level);
-    gpio_set_level(gpio, level);
+    return gpio_set_level(gpio, level);
 }
 
 

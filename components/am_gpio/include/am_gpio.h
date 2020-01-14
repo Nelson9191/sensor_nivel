@@ -31,7 +31,7 @@ void am_gpio_write_task(void * pvParameters);
 
 int am_gpio_read(uint32_t gpio);
 
-void am_gpio_write(uint32_t gpio, uint32_t level);
+int am_gpio_write(uint32_t gpio, uint32_t level);
 
 void am_gpio_config_gpios();
 
